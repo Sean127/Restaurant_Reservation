@@ -12,7 +12,7 @@ body {
 main {
     flex: 1 0 auto;
 }
-/* Colour changes*/
+/* Specific changes*/
 .bg-black{
   background-color: black;
 }
@@ -20,6 +20,19 @@ main {
 .text-white{
   color: white;
 }
+
+.underline{
+  text-decoration: underline;
+}
+
+.inline{
+  display: inline-block;
+}
+
+.align-center{
+  text-align: center;
+}
+
 /* index.html styling */
 .brand-logo{
   padding-left: 5px;
@@ -29,13 +42,9 @@ main {
   width: 100%;
   height: 100%;
 }
-.info{
-  padding-top: 10;
-}
 
 .heading{
   font-size: 3rem;
-  text-decoration-line: underline;
 }
 
 .info {
@@ -45,6 +54,10 @@ main {
 }
 
 /* menu.html styling */
+
+.menu{
+  text-align: center;
+}
 
 /* Footer */
 .page-footer{
