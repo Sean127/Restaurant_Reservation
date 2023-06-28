@@ -1,9 +1,53 @@
+/* Main body */
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+    font-family: 'Agdasima', sans-serif;
+    font-size: 1.25rem;
+    margin:0;
+    padding: 0;
+}
 
-  main {
+main {
     flex: 1 0 auto;
-  }
+}
+/* Colour changes*/
+.bg-black{
+  background-color: black;
+}
+
+.text-white{
+  color: white;
+}
+/* index.html styling */
+.brand-logo{
+  padding-left: 5px;
+}
+
+.home-image{
+  width: 100%;
+  height: 100%;
+}
+.info{
+  padding-top: 10;
+}
+
+.heading{
+  font-size: 3rem;
+  text-decoration-line: underline;
+}
+
+.info {
+  text-align: center;
+  font-size: 2.25rem;
+
+}
+
+/* menu.html styling */
+
+/* Footer */
+.page-footer{
+  margin-top: auto;
+
+}

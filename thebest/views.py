@@ -11,3 +11,10 @@ class ReservationView(generic.ListView):
 def homepage(request):
     return render(request, 'index.html')
 
+
+def get_menu(request):
+    return render(request, 'menu.html')
+
+
+def get_open_times(request):
+    return render(request, 'open_times.html')
