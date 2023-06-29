@@ -34,7 +34,8 @@ PEOPLE = (
 class Reservation(models.Model):
     name = models.CharField(max_length=20,)
     date = models.DateField(default=datetime.now)
-    time = models.CharField(max_length=10, choices=TIME_CHOICES, default="5 PM")
+    time = models.CharField(
+        max_length=10, choices=TIME_CHOICES, default="5 PM")
     people = models.CharField(max_length=5, choices=PEOPLE, default="1")
 
     def __str__(self):

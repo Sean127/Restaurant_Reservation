@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% block content %}
 <div class="align-center"> 
     <h1 class="underline">Book Your Reservation Now!</h1>
@@ -16,23 +15,43 @@
     <div>
         <p>
             <label for="id_date">Date: </label>
-            <input type="text" class="datepicker" id="id_date" name="date">
+            <input type="date" class="datepicker" id="id_date" name="date">
         </p>
     </div>
     <div>
         <p>
             <label for="id_name">Time: </label>
-            <input type="timepicker" class="timepicker" id="id_time" name="time">
+            <select class="form-control" id="id_time" name="time">
+                <option value="5 PM">5 PM</option>
+                <option value="5:30 PM">5:30 PM</option>
+                <option value="6 PM">6 PM</option>
+                <option value="6:30 PM">6:30 PM</option>
+                <option value="7 PM">7 PM</option>
+                <option value="7:30 PM">7:30 PM</option>
+                <option value="8 PM">8 PM</option>
+                <option value="8:30 PM">8:30 PM</option>
+                <option value="9 PM">9 PM</option>
+            </select>
         </p>
     </div>
     <div>
         <p>
             <label for="id_people">Number of People: </label>
-            <input type="people" id="id_people" name="people">
+            <select  class="form-control" id="id_people" name="people">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
         </p>
     </div>
     <div>
         <button type="submit">Book Now!</button>
     </div>
 </form>
+
 {%endblock%}
