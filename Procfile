@@ -1,1 +1,1 @@
-web: gunicorn thebest.wsgi
+web: gunicorn reservation.wsgi
