@@ -9,7 +9,9 @@ from django.core.exceptions import ValidationError
 def correct_time(self):
     time_entered = Reservation.time
     if time_entered < 5 or time_entered > 9:
-        raise ValidationError('Invalid time entered. Please enter a time between 5-9')
+        raise ValidationError(
+            'Invalid time entered. Please enter a time between 5-9'
+            )
 
 
 def correct_people(self):
