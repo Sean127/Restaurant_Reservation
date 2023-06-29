@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="align-center"> 
+    <h1 class="underline">Book Your Reservation Now!</h1>
+    <p>Please enter your details below.</p>
+</div>
+<form method="POST" action="confirm" class="container large-text">
+    {% csrf_token %}
+    <div>
+        <p>
+            <label for="id_name">Name: </label>
+            <input type="text" id="id_name" name="name">
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="id_date">Date: </label>
+            <input type="text" class="datepicker" id="id_date" name="date">
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="id_name">Time: </label>
+            <input type="timepicker" class="timepicker" id="id_time" name="time">
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="id_people">Number of People: </label>
+            <input type="people" id="id_people" name="people">
+        </p>
+    </div>
+    <div>
+        <button type="submit">Book Now!</button>
+    </div>
+</form>
+{%endblock%}
