@@ -4,51 +4,9 @@
     <h1 class="underline">Book Your Reservation Now!</h1>
     <p>Please enter your details below.</p>
 </div>
-<form method="POST" action="confirm" class="container large-text">
+<form method="POST" action="confirm" class="container">
     {% csrf_token %}
-    <div>
-        <p>
-            <label for="id_name">Name: </label>
-            <input type="text" id="id_name" name="name">
-        </p>
-    </div>
-    <div>
-        <p>
-            <label for="id_date">Date: </label>
-            <input type="date" class="datepicker" id="id_date" name="date">
-        </p>
-    </div>
-    <div>
-        <p>
-            <label for="id_name">Time: </label>
-            <select class="form-control" id="id_time" name="time">
-                <option value="5 PM">5 PM</option>
-                <option value="5:30 PM">5:30 PM</option>
-                <option value="6 PM">6 PM</option>
-                <option value="6:30 PM">6:30 PM</option>
-                <option value="7 PM">7 PM</option>
-                <option value="7:30 PM">7:30 PM</option>
-                <option value="8 PM">8 PM</option>
-                <option value="8:30 PM">8:30 PM</option>
-                <option value="9 PM">9 PM</option>
-            </select>
-        </p>
-    </div>
-    <div>
-        <p>
-            <label for="id_people">Number of People: </label>
-            <select  class="form-control" id="id_people" name="people">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-            </select>
-        </p>
-    </div>
+    {{ form.as_p }}
     <div>
         <button type="submit">Book Now!</button>
     </div>
