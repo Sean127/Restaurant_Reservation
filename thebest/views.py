@@ -18,3 +18,7 @@ def get_menu(request):
 
 def get_open_times(request):
     return render(request, 'open_times.html')
+
+
+def get_confirm(request):
+    return render(request, 'confirm.html')
